@@ -1,0 +1,28 @@
+.srchBoxes{
+  margin-left: 80%;
+}
+select{
+  height: 30px;
+}
+.activityView{
+  width: 100%;
+
+}
+.activityView table{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  table-layout: fixed;
+  border-collapse: collapse;
+
+}
+.activityView table tr {
+  width: 100%;
+  margin-left: 20%;
+}
+.activityView table tr:hover {
+  background-color: #f5f5f5
+}
+.activityView table td{
+  width: 100%;
+}

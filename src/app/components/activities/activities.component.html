@@ -1,0 +1,55 @@
+<div class="srchBoxes">
+  <form (submit)="onSubmit()">
+     <div class="form-group">
+       <select class="form-control" #a (change)="filterBox(a.value)">
+         <option >Filter by...</option>
+         <option *ngFor="let filter of filters" [value]="filter">{{filter}}</option>
+       </select>
+     </div>
+     <select class="form-control" #b (change)="filterActsBy(b.value)">
+       <option *ngFor="let attr of attrs" [value]="attr">{{attr}}</option>
+     </select>
+  </form>
+</div><br />
+<hr />
+
+<div class="activityView">
+<table>
+  <div *ngFor="let t of temp; let i = index;" >
+            <tr>
+              <td>
+              {{t.actname}}<br/>
+              {{t.category}}<br/>
+              {{t.location}}<br/>
+              {{t.price}}<br/>
+              {{t.provname}}<br/>
+              <a routerLink="/activities/{{t.identifier}}">
+                <button type="button" class="btn btn-default">
+                More Details</button>
+              </a>
+              </td>
+              <td>
+                    <img src="{{t.url}}" class="img-fluid" alt="Responsive image"/>
+              </td>
+            </tr>
+    <hr/>
+  </div>
+</table>
+
+
+
+  <!-- <div *ngFor="let t of temp; let i = index;" >
+            {{t.actname}}<br/>
+            {{t.category}}<br/>
+            {{t.location}}<br/>
+            {{t.price}}<br/>
+            {{t.provname}}<br/>
+            <a routerLink="/activities/{{t.identifier}}">
+              Details
+            </a>
+      <span class="image">
+          <img src="{{t.url}}" class="img-fluid" alt="Responsive image"/>
+      </span>
+    <hr/>
+  </div>
+</div> -->

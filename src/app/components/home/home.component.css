@@ -1,0 +1,22 @@
+a{
+  color: #404040;
+  font-size: 150%;
+  font-weight: bold;
+}
+
+.right {
+  width: 40%;
+  height:auto;
+  margin-left: 60%;
+
+}
+
+.left {
+  width: 40%;
+  height:auto;
+}
+
+.wrapper{
+  margin-left: 5%;
+  margin-right: 5%;
+}

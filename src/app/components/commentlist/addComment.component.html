@@ -1,0 +1,8 @@
+<br />
+<hr />
+<h2>Comments</h2>
+<div *ngFor="let comment of comments; let i = index;" >
+      {{comment.username}}:<br />
+      "<span class="comment">{{comment.comment}}</span>"
+        <hr>
+</div>

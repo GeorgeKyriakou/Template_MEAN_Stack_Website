@@ -1,0 +1,46 @@
+<div class="masthead"></div>
+ <div  class="container">
+  <div class="navbar navbar-default">
+       <div class="navbar-header">
+         <h1 routerLinkActive="active"><a id="brand" [routerLink]="['/home']">Fantastic Travels!</a></h1>
+         <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+           <a data-toggle="collapse" data-parent="#accordion">
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+           </a>
+         </button>
+       </div>
+       <div class="navbar-collapse collapse " id="navbar-main">
+         <ul class="nav navbar-nav navbar-right">
+           <li routerLinkActive="active"><a [routerLink]="['/activities']">Activities Gallery</a></li>
+         </ul>
+       </div>
+   </div>
+ </div>
+
+<section id = "main">
+    <div class="container">
+    <router-outlet>
+    </router-outlet>
+  </div>
+</section>
+
+<footer>
+      <hr/>
+        <table class="center">
+          <tr >
+            <td class="third">
+              <a href="//twitter.com/">Twitter</a> <br />
+              <a href="//facebook.com">Facbook</a>
+            </td>
+            <td class="third">
+              <a [routerLink]="['/home']" routerLinkActive="active">
+                |HOME|</a>
+            </td>
+            <td class="third">
+              <a>Copyright &copy; 2017 George Kyriakou</a>
+            </td>
+          </tr>
+        </table>
+  </footer>

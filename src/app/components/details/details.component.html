@@ -1,0 +1,46 @@
+<div *ngIf="hasData">
+<div class="head">
+  <h3>{{this.actDetails.actName}}</h3>
+</div>
+<br />
+<hr />
+  <div class="bckground">
+    <p>
+      {{this.actDetails.category}}
+    </p>
+    <p >
+      {{this.actDetails.location}}
+    </p>
+    <hr />
+    <div class="details">
+      Details: <br />
+      {{this.actDetails.details}} <br />
+      Cost: {{this.actDetails.price}} SEK <br />
+      <br />
+      <!-- <button type="button" class="btn btn-default" (click)="request()">
+        Book Now</button> -->
+          <a routerLink="/activities/{{this.actDetails.identifier}}/bookNow" ><button type="button" class="btn btn-default">
+          Book Now</button></a>
+    </div>
+  </div>
+</div>
+
+<div class="butns">
+    <button type="button" id="fav" (click)="favorite()">
+      {{favButton}}</button>
+      <span>
+      <button type="button" class="btn btn-default" (click)="toggleComm()">
+        Leave a comment</button>
+        <a routerLink="/activities" ><button type="button" class="btn btn-default">
+          Back</button></a>
+        <div *ngIf="addC"><br />
+            <input type="text" [(ngModel)]="name"class="form-control" placeholder="Your name.." >
+            <input type="text" [(ngModel)]="mail" class="form-control" placeholder="Your email..">
+            <textarea id="com" [(ngModel)]="comment" class="form-control" rows="4" placeholder="Add your comment"></textarea>
+            <button type="button" class="btn btn-default" (click)="submitCommen(name,mail,comment)">Submit</button>
+        </div>
+      </span>
+
+    </div>
+
+  <comment></comment>

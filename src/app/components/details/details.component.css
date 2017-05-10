@@ -1,0 +1,22 @@
+.details{
+  width: 60%;
+  margin-right: 10%;
+}
+.head{
+  width: 70%;
+}
+.head h3{
+  float: left;
+}
+.butns{
+  float:right;
+}
+.back{
+  float:right;
+}
+#com{
+
+}
+#loc{
+  margin-left: 40%;
+}
