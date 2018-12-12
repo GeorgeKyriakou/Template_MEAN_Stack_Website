@@ -5,7 +5,6 @@ import { Component } from '@angular/core';
   moduleId: module.id,
   selector: 'pageNotFound',
   templateUrl: 'pageNotFound.component.html',
-  styleUrls: ['pageNotFound.component.css']
 })
 export class PageNotFoundComponent { }
  

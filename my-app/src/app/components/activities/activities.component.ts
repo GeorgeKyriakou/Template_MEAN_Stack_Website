@@ -1,6 +1,5 @@
-import { Component, OnInit } from '@angular/core'
+import { Component } from '@angular/core'
 import {ActivityService} from '../../services/activities/activities.service'
-import {Pipe, PipeTransform} from'@angular/core'
 
 @Component({
   moduleId: module.id,

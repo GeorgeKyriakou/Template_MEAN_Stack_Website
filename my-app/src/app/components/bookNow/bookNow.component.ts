@@ -5,6 +5,5 @@ import { Component } from '@angular/core';
   moduleId: module.id,
   selector: 'bookNow',
   templateUrl: 'bookNow.component.html',
-  styleUrls: ['bookNow.component.css']
 })
 export class BookComponent { }

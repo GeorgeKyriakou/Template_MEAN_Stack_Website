@@ -2,7 +2,7 @@
 .masthead{
     min-height: 400px;
     width: 100%;
-    background:url("./img/banner.jpg") no-repeat 0 -200px;
+    background:url("../img/banner.jpg") no-repeat 0 -200px;
     background-position: center;
     background-size: 100%
 }
